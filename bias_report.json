@@ -1,0 +1,31 @@
+{
+  "male": {
+    "count": 118,
+    "empathy_mean": 3.589830508474576,
+    "empathy_std": 0.6649194836557569,
+    "sentiment_mean": 0.06730508474576273,
+    "sentiment_std": 0.07720374957398995,
+    "advice_quality_mean": 4.594067796610168,
+    "advice_quality_std": 0.5492484955775926,
+    "word_count_mean": 327.27966101694915,
+    "gendered_language_pct": 33.05084745762712
+  },
+  "female": {
+    "count": 118,
+    "empathy_mean": 3.5483050847457624,
+    "empathy_std": 0.6924171771074225,
+    "sentiment_mean": 0.0590677966101695,
+    "sentiment_std": 0.08510975606832369,
+    "advice_quality_mean": 4.2885593220338984,
+    "advice_quality_std": 0.747486129332736,
+    "word_count_mean": 272.7542372881356,
+    "gendered_language_pct": 55.932203389830505
+  },
+  "differences": {
+    "empathy_diff": 0.041525423728813404,
+    "sentiment_diff": 0.008237288135593233,
+    "advice_quality_diff": 0.3055084745762695,
+    "word_count_diff": 54.525423728813564,
+    "gendered_language_diff": -22.881355932203384
+  }
+}
