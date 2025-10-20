@@ -25,9 +25,9 @@ class QualitativeExtractor:
             genders = group[gender_col].unique()
             
             # Check if we have both male and female responses
-            if len(genders) >= 2 and 'Male' in genders and 'Female' in genders:
-                male_response = group[group[gender_col] == 'Male'].iloc[0]
-                female_response = group[group[gender_col] == 'Female'].iloc[0]
+            if len(genders) >= 2 and 'male' in genders and 'female' in genders:
+                male_response = group[group[gender_col] == 'male'].iloc[0]
+                female_response = group[group[gender_col] == 'female'].iloc[0]
                 
                 matched_pairs.append({
                     'prompt': prompt,
@@ -71,7 +71,7 @@ class QualitativeExtractor:
         prompt_col = 'question' if 'question' in df.columns else 'prompt'
         
         # 1. Highest gendered language in female responses
-        female_df = df[df[gender_col] == 'Female']
+        female_df = df[df[gender_col] == 'female']
         if gendered_col in female_df.columns:
             gendered_female = female_df[female_df[gendered_col] == 1].sort_values(
                 by=advice_col if advice_col in female_df.columns else gendered_col, 
@@ -99,7 +99,7 @@ class QualitativeExtractor:
                 })
         
         # 3. Highest advice quality for males
-        male_df = df[df[gender_col] == 'Male']
+        male_df = df[df[gender_col] == 'male']
         if advice_col in male_df.columns:
             high_advice_male = male_df.nlargest(n, advice_col)
             
