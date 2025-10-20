@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "total_responses": 236,
+    "responses_modified": 21,
+    "average_bias_reduction": 0.20211864406779662,
+    "average_improvement_pct": 8.361016949152543,
+    "original_avg_bias": 0.31949152542372883,
+    "debiased_avg_bias": 0.1173728813559322
+  },
+  "by_gender": {
+    "male": {
+      "count": 118,
+      "responses_modified": 9,
+      "avg_bias_reduction": 0.14491525423728813,
+      "avg_improvement_pct": 7.18050847457627,
+      "original_avg_bias": 0.26949152542372884,
+      "debiased_avg_bias": 0.12457627118644067
+    },
+    "female": {
+      "count": 118,
+      "responses_modified": 12,
+      "avg_bias_reduction": 0.25932203389830505,
+      "avg_improvement_pct": 9.541525423728814,
+      "original_avg_bias": 0.3694915254237289,
+      "debiased_avg_bias": 0.11016949152542373
+    }
+  }
+}
